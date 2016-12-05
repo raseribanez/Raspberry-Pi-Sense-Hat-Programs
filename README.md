@@ -40,7 +40,7 @@ UPDATE
 =========
 Just a little update, I figured out how to do the random side of things... and went with (random.choice) seeing as my dice numbers were stored in a list. I knoew it was random.choice...but just had to suss out how the API would accept it
 
-The dice simulator is Dice2_SIMULATOR.py
+The dice simulator is Dice2_SIMULATION.py
 
 Its a bit rough around the edges, it literally just shows a random picture using the grid method I showed...I want to add the clear screen to it and have interaction with the user (do you want to roll again?) and also have a little animation before the number shows, to simulate the rolling action!
 
