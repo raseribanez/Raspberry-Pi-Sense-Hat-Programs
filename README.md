@@ -36,6 +36,14 @@ I may do som elittle cartoons with this but at the moment I am playing with the 
     
 because you have to follow the API requirements for interacting with other modules.
 
+UPDATE
+=========
+Just a little update, I figured out how to do the random side of things... and went with (random.choice) seeing as my dice numbers were stored in a list. I knoew it was random.choice...but just had to suss out how the API would accept it
+
+The dice simulator is Dice2_SIMULATOR.py
+
+Its a bit rough around the edges, it literally just shows a random picture using the grid method I showed...I want to add the clear screen to it and have interaction with the user (do you want to roll again?) and also have a little animation before the number shows, to simulate the rolling action!
+
 ALL of the codes here will work on the Real version and the Digital or Virtual version, either online at Trinket.io or on the Raspberry Pi itself using Raspbian Jessie Pixel
 
 Theres some cool stuff here, from little games, to interacting with the Minecraft Pi game! I am not taking credit for any of the work that's not mine, I am just putting what I have found in one place for others to find easily!
