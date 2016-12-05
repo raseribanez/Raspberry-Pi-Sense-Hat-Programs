@@ -11,6 +11,31 @@ I loved this, because you can see your code interact physically with hardware, e
 
 MOST of the codes here are a collection of things I found while trying to learn more about codeing the Sense Hat, so a lot aren't my actual work although I hae rewritten them for my own use.
 
+HOWEVER...once I sussed out how simple it is to play with the SenseHat I started to play with my own ideas...I have made a simple animation script, where you set RGB variables to a single letter, then draw a grid with them in an array fashion, like this:
+
+    imageA = [
+    w,w,w,w,w,w,w,w,
+    w,w,w,w,w,w,w,w,
+    w,w,w,w,w,w,w,w,
+    w,w,w,b,b,w,w,w,
+    w,w,w,b,b,w,w,w,
+    w,w,w,w,w,w,w,w,
+    w,w,w,w,w,w,w,w,
+    w,w,w,w,w,w,w,w
+    ]
+
+w = [white RGB values]
+b = [blue RGB values]
+
+By making a series of them, you create a list, or a sequence and then tell the sense hat to display a list of images - as an animation...I then just put a small time delay inbetween them. The above image is just a blue dot - representing number 1 of a dice. I drew all the numbers and made a dice simulator, in the process learned how to do the animation, so the file Dice1_ANIMATION.py is a template for animation on the sensehat, You could just rewrite the grids to display your own image, and update the rgb list to make new colours.
+
+I may do som elittle cartoons with this but at the moment I am playing with the random for the dice simulator, it isn't as easy as:
+    
+    choiceList = [1, 2, 3, 4, 5, 6, 7, 8]
+    print random.choice(choiceList)
+    
+because you have to follow the API requirements for interacting with other modules.
+
 ALL of the codes here will work on the Real version and the Digital or Virtual version, either online at Trinket.io or on the Raspberry Pi itself using Raspbian Jessie Pixel
 
 Theres some cool stuff here, from little games, to interacting with the Minecraft Pi game! I am not taking credit for any of the work that's not mine, I am just putting what I have found in one place for others to find easily!
