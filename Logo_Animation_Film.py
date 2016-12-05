@@ -1,6 +1,9 @@
 # Ben Woodfield
 # This draws the Pi Logo with a smiley Face  
-# Logo image taken from demo. I added the face to it
+# The adds an animation to it, it's 12 frames or images
+# He is being sick and the screen fills up
+
+# Notice his eyes close just before the sick hits that level!!
 
 from sense_hat import SenseHat
 import time
