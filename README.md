@@ -14,3 +14,11 @@ MOST of the codes here are a collection of things I found while trying to learn 
 ALL of the codes here will work on the Real version and the Digital or Virtual version, either online at Trinket.io or on the Raspberry Pi itself using Raspbian Jessie Pixel
 
 Theres some cool stuff here, from little games, to interacting with the Minecraft Pi game! I am not taking credit for any of the work that's not mine, I am just putting what I have found in one place for others to find easily!
+
+NOTE:
+=======
+There are one ortwo scripts here that require additional modules to be imported to Python
+
+If you use the Online Emulator (trinket.io) then you will find that some won't run because they don't have access to the required modules.
+
+If you run them on the Pi however they will run fine, providing you have them installed. Most I am sure are just Standard Python modules like random and itertools so you will be fine using the Pi
