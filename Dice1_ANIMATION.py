@@ -97,7 +97,7 @@ diceList = [imageA, imageB, imageC, imageD, imageE, imageF]
 while True:
     for image in diceList:
         sense.set_pixels(image)
-        sleep(0.5)
+        time.sleep(0.5)
 
 
 
