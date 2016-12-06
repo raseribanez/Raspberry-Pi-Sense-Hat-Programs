@@ -1,5 +1,6 @@
 # Ben Woodfield
-# Sense Hat Raspberry Pi Logo - used in my cartoon
+# Sense Hat Raspberry Pi Logo - used in my first cartoon, and my antigravity cartoon
+# This is the unedited version of the Pi Logo I show at the end
 
 from sense_hat import SenseHat
 import time
