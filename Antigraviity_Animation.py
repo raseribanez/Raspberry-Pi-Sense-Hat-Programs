@@ -1,3 +1,18 @@
+'''
+  NOTE the scroll_sopeed seems ok in this browser emulator, 
+  at least it is on my system, BUT I ran it on the Raspberry Pi
+  and it was waaaaay too fast to read the scrolling message
+  
+  It is 0.5 here and that is slow on my browser, so I changed
+  it to 0.2 and it sped up nicely...but if you run that speed 
+  on the Pi it is too fast.
+  
+  I think it may just be my internet connection speed and PC
+  so in different systems it may run better
+  
+  To change it, go to LINES 236 and 246 and adjust the scroll_speed
+'''
+
 # Ben Woodfield - 06.12.2016
 # NOT FINISHED I am still working on this on the Trinket site
 
