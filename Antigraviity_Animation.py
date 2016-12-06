@@ -1,4 +1,6 @@
 # Ben Woodfield - 06.12.2016
+# NOT FINISHED I am still working on this on the Trinket site
+
 # This is a cartoon or animation based on the little joke
 # when you type import antigravity into a Python shell
 
