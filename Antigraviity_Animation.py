@@ -26,17 +26,27 @@
 # you could wrap the entire thing into a class, or make a function
 # to handle the main animation!
 
+# Import the modules
 from sense_hat import SenseHat
 import time
 
 sense = SenseHat()
 
 # RGB Values / Variables
-B = [0,255,255]
-G = [0,255,0]
-P = [255,255,255]
-W = [128,128,128]
-O = [0,0,0]
+# Main animation colors
+B = [0,255,255]           # aqua (light blue)
+G = [0,255,0]             # lime
+P = [255,255,255]         # white
+W = [128,128,128]         # gray
+O = [0,0,0]               # none (black)
+
+# The Pi Logos new colors - some were above so just used them
+R = [255,0,255]           # red
+X = [0,0,255]             # blue
+L = [178,34,34]           # firebrick (dark red)
+
+# The Python Logos new colors
+F = [255,255,0]           # yellow]
 
 
 # The first animation images
@@ -221,6 +231,34 @@ G, G, G, G, G, G, G, G
 
 ##======================================================##
 
+# Raspberry Pi Logo
+pi_logo = [
+O, G, G, O, O, G, G, O, 
+O, O, G, G, G, G, O, O,
+O, O, R, R, R, R, O, O, 
+O, R, R, R, R, R, R, O,
+R, R, R, R, R, R, R, R,
+R, R, R, R, R, R, R, R,
+O, R, R, R, R, R, R, O,
+O, O, R, R, R, R, O, O,
+]
+
+# Raspberry Pi Logo 2
+pi_logo2 = [
+O, G, G, O, O, G, G, O, 
+O, O, G, G, G, G, O, O,
+O, O, R, R, R, R, O, O, 
+O, R, X, R, R, X, R, O,
+R, R, R, R, R, R, R, R,
+R, L, R, R, R, R, L, R,
+O, R, L, L, L, L, R, O,
+O, O, R, R, R, R, O, O,
+]
+
+
+##======================================================##
+
+
 # Arrange the images into 2 lists for the animation sequences
 picList  = [screen,screen1,screen2,screen3,screen4,screen5,screen6]
 picListB = [screen7,screen8,screen9,screen10,screen11,screen12,screen13,screen14,screen15] 
@@ -233,7 +271,7 @@ while True:
     break
   
 # First break / message  
-sense.show_message('import antigravity...', scroll_speed=0.02, text_colour=[255,255,0], back_colour=[0,0,255])
+sense.show_message('import antigravity...', scroll_speed=0.05, text_colour=[255,255,0], back_colour=[0,0,255])
 
 # Start the second animation loop
 while True:
@@ -243,17 +281,22 @@ while True:
     break
   
 # Second break / message  
-sense.show_message('The power of PYTHON....by Ben Woodfield', scroll_speed=0.02, text_colour=[255,255,0], back_colour=[0,0,255])
+sense.show_message('The Power of Python....by Ben Woodfield', scroll_speed=0.05, text_colour=[255,255,0], back_colour=[0,0,255])
+# End display images
+sense.set_pixels(pi_logo)
+time.sleep(2)
+sense.set_pixels(pi_logo2)
+#time.sleep(3)
 
 ##======================================================##
 
 ''' 
 STILL TO DO
 *  Show a final Python Logo
-*  Show a final Pi logo
+*  Show a final Pi logo ### DONE
 '''
 
-# This can be used to clear the screen of LED's if needed
+# This can be used to clear the screen of LED's if needed when testing
 #sense.clear()
 
 ##======================================================##
@@ -261,5 +304,9 @@ STILL TO DO
 '''
     Every time you create a new frame or image
     Use this line for testing them on the screen / sense hat
+    You can test an image by ONLY running the import sensehat line, the sense = SenseHat(line
+    the color variables, the image you draw (grid)
+    Then this one line below will allow you to display your grid image for testing
+    this is how I create animations by drawing and testing images/frames one by one
 '''
 #sense.set_pixels(screen4)
