@@ -1,5 +1,6 @@
 # Ben Woodfield
 # This draws the Pi Logo with a smiley Face  
+# The Trinket site has a little demo of an animation - I took the Pi logo from that to use in my own program
 # The adds an animation to it, it's 12 frames or images
 # He is being sick and the screen fills up
 
