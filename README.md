@@ -58,7 +58,7 @@ To draw a picture with the LED's you have access to all of the RGB values. And y
     O, O, R, R, R, R, O, O,
     ]
 
-    Then draw the picture to the SenseHat using the set_pixels() command
+    # Then draw the picture to the SenseHat using the set_pixels() command
     sense.set_pixels(pi_logo)
 
 
